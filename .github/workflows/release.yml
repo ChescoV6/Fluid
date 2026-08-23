@@ -37,7 +37,7 @@ jobs:
           Remove-Item $certPath
 
       - name: Create GitHub release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: ./Bloxstrap/bin/Release/net8.0-windows/win-x64/publish/Fluid.exe
           generate_release_notes: true

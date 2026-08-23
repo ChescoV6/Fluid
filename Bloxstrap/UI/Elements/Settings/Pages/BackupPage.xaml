@@ -1,0 +1,36 @@
+<ui:UiPage x:Class="Bloxstrap.UI.Elements.Settings.Pages.BackupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:resources="clr-namespace:Bloxstrap.Resources"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="BackupPage"
+      Scrollable="True">
+    <StackPanel Margin="0,0,14,14">
+        <TextBlock Margin="0,0,0,16" Text="Back up, restore or migrate your Fluid configuration." FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+
+        <TextBlock Text="Backup" FontSize="20" FontWeight="Medium" Margin="0,8,0,0" />
+
+        <ui:CardAction Margin="0,12,0,0" Icon="ArrowExportLtr24" Command="{Binding ExportCommand}">
+            <StackPanel>
+                <TextBlock FontSize="14" Text="Export configuration" />
+                <TextBlock Margin="0,2,0,0" FontSize="12" Padding="0,0,16,0" TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorTertiaryBrush}" Text="Saves your settings, fast flags and state into a single portable file." />
+            </StackPanel>
+        </ui:CardAction>
+
+        <ui:CardAction Margin="0,8,0,0" Icon="ArrowImport24" Command="{Binding ImportCommand}">
+            <StackPanel>
+                <TextBlock FontSize="14" Text="Import configuration" />
+                <TextBlock Margin="0,2,0,0" FontSize="12" Padding="0,0,16,0" TextWrapping="Wrap" Foreground="{DynamicResource TextFillColorTertiaryBrush}" Text="Restores a previously exported configuration pack. Restart Fluid afterwards." />
+            </StackPanel>
+        </ui:CardAction>
+
+        <TextBlock Text="Migrate from another bootstrapper" FontSize="20" FontWeight="Medium" Margin="0,20,0,0" />
+        <TextBlock Margin="0,4,0,0" Text="Brings over your settings, fast flags, mods and custom themes." FontSize="12" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+
+        <StackPanel Margin="0,12,0,0" x:Name="MigrationPanel" />
+    </StackPanel>
+</ui:UiPage>

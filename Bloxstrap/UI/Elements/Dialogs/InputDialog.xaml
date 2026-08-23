@@ -1,0 +1,27 @@
+<base:WpfUiWindow x:Class="Bloxstrap.UI.Elements.Dialogs.InputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:base="clr-namespace:Bloxstrap.UI.Elements.Base"
+        Title="Fluid"
+        Width="380"
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        ExtendsContentIntoTitleBar="True"
+        WindowBackdropType="Mica"
+        Background="{ui:ThemeResource ApplicationBackgroundBrush}">
+    <StackPanel Margin="16,12,16,16">
+        <TextBlock x:Name="MessageText" TextWrapping="Wrap" Margin="2,4,0,10" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+        <ui:TextBox x:Name="ValueBox" Margin="0,0,0,14" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Width="100" Margin="0,0,10,0" Content="Cancel" IsCancel="True" Click="Cancel_Click" />
+            <ui:Button Grid.Column="2" Width="100" Appearance="Primary" Content="OK" IsDefault="True" Click="Ok_Click" />
+        </Grid>
+    </StackPanel>
+</base:WpfUiWindow>

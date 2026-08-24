@@ -7,7 +7,6 @@
 ![][badge-actions]
 ![][badge-downloads]
 [![][badge-latest]][repo-latest]
-[![][badge-discord]][discord-invite]
 ![][badge-stars]
 
 </div>
@@ -51,7 +50,6 @@ to enhance your experience.
 [badge-actions]:   https://img.shields.io/github/actions/workflow/status/ChescoV6/Fluid/ci-release.yml?branch=master&style=flat-square&label=builds
 [badge-downloads]: https://img.shields.io/github/downloads/ChescoV6/Fluid/latest/total?style=flat-square&color=981bfe
 [badge-latest]:    https://img.shields.io/github/v/release/ChescoV6/Fluid?style=flat-square&color=7a39fb
-[badge-discord]:   https://img.shields.io/discord/1299397064165429360?style=flat-square&logo=discord&logoColor=white&logoSize=auto&label=discord&color=4d3dff
 [badge-stars]:     https://img.shields.io/github/stars/ChescoV6/Fluid?style=flat-square&color=dd9900
 
 [repo-latest]:    https://github.com/ChescoV6/Fluid/releases/latest
@@ -59,7 +57,6 @@ to enhance your experience.
 [repo-showcase-dark]:  https://github.com/ChescoV6/Fluid/raw/main/Images/Showcase-Dark.png#gh-dark-mode-only
 [repo-showcase-light]:  https://github.com/ChescoV6/Fluid/raw/main/Images/Showcase-Light.png#gh-light-mode-only
 
-[discord-invite]: https://discord.gg/SRs5zb9BJd
 
 [bloxstrap]: https://bloxstraplabs.com
 [appleblox]: https://github.com/AppleBlox/appleblox
